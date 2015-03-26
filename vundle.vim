@@ -24,6 +24,11 @@ Plugin 'editorconfig-vim'
 " Scala and SBT support
 Plugin 'derekwyatt/vim-scala'
 Plugin 'derekwyatt/vim-sbt'
+" file and dir browser
+Plugin 'scrooloose/nerdtree'
+" integrate ack, especially to be able to open matches, hugely useful for
+" re-factoring
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

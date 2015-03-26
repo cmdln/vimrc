@@ -27,5 +27,9 @@ set backspace=start,indent,eol
 set textwidth=80
 set anti enc=utf-8
 set listchars+=nbsp:¬
+set listchars+=tab:»·,trail:·
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
 
 color desert

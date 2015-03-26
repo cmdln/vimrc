@@ -29,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 " integrate ack, especially to be able to open matches, hugely useful for
 " re-factoring
 Plugin 'mileszs/ack.vim'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

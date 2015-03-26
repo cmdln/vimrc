@@ -20,7 +20,7 @@ set nocp
 set lbr
 set sbr=+
 set laststatus=2
-set stl=%-0.100f\ %r\ %m%=line\ %l\ of\ %L\ --%p%%--\
+"set stl=%-0.100f\ %r\ %m%=line\ %l\ of\ %L\ --%p%%--\
 set fde=1
 set fdm=syntax
 set backspace=start,indent,eol

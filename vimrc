@@ -6,6 +6,7 @@ let oldwd = getcwd()
 exec "cd " . vimrc_git
 source vundle.vim
 source java.vim
+source javascript.vim
 exec "cd " . oldwd
 
 filetype plugin indent on

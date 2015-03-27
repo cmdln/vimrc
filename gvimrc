@@ -8,4 +8,5 @@ set lines=9999
 " from the help, recommended for widest possible
 set columns=9999
 colorscheme desert
-let g:airline#extensions#tagbar#enabled = 1
+" enable antialiasing for environments supporting it
+set anti

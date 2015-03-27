@@ -26,6 +26,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'derekwyatt/vim-sbt'
 " file and dir browser
 Plugin 'scrooloose/nerdtree'
+" syntax checking on steroids
+Plugin 'scrooloose/syntastic'
 " integrate ack, especially to be able to open matches, hugely useful for
 " re-factoring
 Plugin 'mileszs/ack.vim'

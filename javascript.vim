@@ -1,1 +1,1 @@
-autocmd FileType java set fdm=indent
+autocmd FileType javascript set fdm=indent

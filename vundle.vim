@@ -30,6 +30,8 @@ Plugin 'scrooloose/nerdtree'
 " re-factoring
 Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
+" git integration
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

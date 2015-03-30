@@ -34,6 +34,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
 " git integration
 Plugin 'tpope/vim-fugitive'
+" heavily designed color scheme for readability
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

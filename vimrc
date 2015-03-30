@@ -79,8 +79,8 @@ let g:syntastic_javascript_checkers = ['jsxhint']
 
 " quickly toggle a right, vsplit for viewing, navigating whatever structure easy
 " tags/tagbar can figure out for the current buffer
-nmap <F8> :TagbarToggle<CR>
+nmap <F9> :TagbarToggle<CR>
 " quickly toggle a left, vsplit for an insanely powerful file explorer
-nmap <F9> :NERDTreeToggle<CR>
+nmap <F8> :NERDTreeToggle<CR>
 
 color desert

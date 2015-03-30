@@ -33,6 +33,27 @@ set sbr=+
 " always on status line
 set laststatus=2
 
+" set up folding preferences
+set fde=1
+set fdm=syntax
+" let backspace work more naturally
+set backspace=start,indent,eol
+" set a readable width
+set textwidth=80
+" favor modern encoding
+set enc=utf-8
+" more readable config for list mode
+set listchars+=nbsp:¬,tab:»·,trail:·
+set listchars-=eol:$
+" smarter handling of case during search
+set ignorecase
+set smartcase
+" disable outdated data loss protections
+set nobackup
+set noswapfile
+" make pastemode more accessible
+set pastetoggle=<F2>
+
 " configure airline, advanced status line plugin
 let g:airline#extensions#tagbar#enabled = 1
 " these symbols rely on a patched powerline font being set either as gfn within
@@ -55,27 +76,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jsxhint']
-
-" set up folding preferences
-set fde=1
-set fdm=syntax
-" let backspace work more naturally
-set backspace=start,indent,eol
-" set a readable width
-set textwidth=80
-" favor modern encoding
-set enc=utf-8
-" more readable config for list mode
-set listchars+=nbsp:¬,tab:»·,trail:·
-set listchars-=eol:$
-" smarter handling of case during search
-set ignorecase
-set smartcase
-" disable outdated data loss protections
-set nobackup
-set noswapfile
-" make pastemode more accessible
-set pastetoggle=<F2>
 
 " quickly toggle a right, vsplit for viewing, navigating whatever structure easy
 " tags/tagbar can figure out for the current buffer

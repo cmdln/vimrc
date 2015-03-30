@@ -32,14 +32,30 @@ set lbr
 set sbr=+
 " always on status line
 set laststatus=2
+
 " configure airline, advanced status line plugin
 let g:airline#extensions#tagbar#enabled = 1
+" these symbols rely on a patched powerline font being set either as gfn within
+" .gvimrc or as the font for the given terminal program
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
 " configure syntastic, advanced syntax checker
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jsxhint']
+
 " set up folding preferences
 set fde=1
 set fdm=syntax

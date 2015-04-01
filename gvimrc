@@ -11,3 +11,5 @@ colorscheme solarized
 set background=dark
 " enable antialiasing for environments supporting it
 set anti
+set guioptions-=r
+set guioptions-=b

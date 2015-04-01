@@ -23,6 +23,12 @@ set hidden
 set exrc
 " make looking for local changes secure
 set secure
+" more secure
+set modelines=0
+" preserve some context
+set scrolloff=3
+" make the cursor a bit easier to follows
+set cursorline
 " make search work a bit more like tab completion in bash
 set incsearch
 set wildmode=longest:full
@@ -45,6 +51,8 @@ set enc=utf-8
 " more readable config for list mode
 set listchars+=nbsp:¬,tab:»·,trail:·
 set listchars-=eol:$
+" add a hint for long lines
+set colorcolumn=120
 " smarter handling of case during search
 set ignorecase
 set smartcase
@@ -53,6 +61,8 @@ set nobackup
 set noswapfile
 " make pastemode more accessible
 set pastetoggle=<F2>
+" save when moving away
+au FocusLost * :wa
 
 " configure airline, advanced status line plugin
 let g:airline#extensions#tagbar#enabled = 1

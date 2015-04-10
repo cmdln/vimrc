@@ -7,6 +7,7 @@ exec "cd " . vimrc_git
 source vundle.vim
 source java.vim
 source javascript.vim
+source markdown.vim
 exec "cd " . oldwd
 
 " turn on file type plugins

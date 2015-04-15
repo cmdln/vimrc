@@ -36,6 +36,8 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 " heavily designed color scheme for readability
 Plugin 'altercation/vim-colors-solarized'
+" visualize vim's undo tree
+Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

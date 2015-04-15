@@ -89,6 +89,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jsxhint']
 
+" toggle syntastic's checking
+nmap <F4> :SyntasticToggleMode<CR>
+" toggle gundo's display
+nmap <F5> :GundoToggle<CR>
 " quickly toggle a right, vsplit for viewing, navigating whatever structure easy
 " tags/tagbar can figure out for the current buffer
 nmap <F9> :TagbarToggle<CR>

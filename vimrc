@@ -95,4 +95,4 @@ nmap <F9> :TagbarToggle<CR>
 " quickly toggle a left, vsplit for an insanely powerful file explorer
 nmap <F8> :NERDTreeToggle<CR>
 
-color desert
+colorscheme solarized

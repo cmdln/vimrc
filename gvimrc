@@ -7,7 +7,6 @@ source ~/.gvimrc_local
 set lines=9999
 " from the help, recommended for widest possible
 set columns=9999
-colorscheme solarized
 set background=dark
 " enable antialiasing for environments supporting it
 set anti

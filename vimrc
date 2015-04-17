@@ -99,18 +99,22 @@ nmap <F9> :TagbarToggle<CR>
 " quickly toggle a left, vsplit for an insanely powerful file explorer
 nmap <F8> :NERDTreeToggle<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open current file with app given
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! s:OpenWith(appname)
-  noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
-  if v:shell_error
-    echohl Error
-    echon "Problem opening the file."
-    echohl Normal
-  endif
-endfunction
+" open is OS X only, the closest equiv in line, xdg-open, doesn't allow an
+" argument for speciying a particular app
+if has('gui_macvim')
+	""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+	" Open current file with app given
+	""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+	function! s:OpenWith(appname)
+		noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
+		if v:shell_error
+			echohl Error
+			echon "Problem opening the file."
+			echohl Normal
+		endif
+	endfunction
 
-command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
+	command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
+endif
 
 colorscheme solarized

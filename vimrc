@@ -8,6 +8,7 @@ source vundle.vim
 source java.vim
 source javascript.vim
 source markdown.vim
+source text.vim
 exec "cd " . oldwd
 
 " turn on file type plugins

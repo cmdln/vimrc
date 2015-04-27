@@ -12,3 +12,5 @@ set background=dark
 set anti
 set guioptions-=r
 set guioptions-=b
+
+colorscheme solarized

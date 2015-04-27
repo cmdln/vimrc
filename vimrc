@@ -117,5 +117,3 @@ if has('gui_macvim')
 
 	command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
 endif
-
-colorscheme solarized

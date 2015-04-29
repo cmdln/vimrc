@@ -117,3 +117,6 @@ if has('gui_macvim')
 
 	command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
 endif
+
+" make sure to set TERM to xterm-256color in terminal program or app
+colorscheme solarized

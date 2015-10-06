@@ -4,3 +4,6 @@ autocmd filetype markdown set expandtab
 autocmd filetype markdown set nolinebreak
 autocmd filetype markdown set fdm=indent
 autocmd filetype markdown set tw=0
+autocmd filetype markdown set smarttab
+autocmd filetype markdown set smartindent
+autocmd FileType javascript set spell

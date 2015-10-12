@@ -38,6 +38,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 " visualize vim's undo tree
 Plugin 'sjl/gundo.vim'
+" better support for JS
+Plugin 'pangloss/vim-javascript'
+" find, complete, etc. on steroids
+Plugin 'Shougo/unite.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

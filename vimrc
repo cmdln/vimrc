@@ -100,8 +100,8 @@ let g:syntastic_check_on_wq = 0
 " explicitly set the js checker to my preferred one
 let g:syntastic_javascript_checkers = ['eslint']
 
-" toggle syntastic's checking
-nmap <F4> :SyntasticToggleMode<CR>
+" quickly clear Syntastic info
+nmap <F4> :SyntasticReset<CR>
 " toggle gundo's display
 nmap <F5> :GundoToggle<CR>
 " quickly toggle a right, vsplit for viewing, navigating whatever structure easy
@@ -109,6 +109,15 @@ nmap <F5> :GundoToggle<CR>
 nmap <F9> :TagbarToggle<CR>
 " quickly toggle a left, vsplit for an insanely powerful file explorer
 nmap <F8> :NERDTreeToggle<CR>
+" open tree to current buffer
+nmap <S-F8> :NERDTreeFind<CR>
+
+" use the silver searcher with Unite's async file recursion
+let g:unite_source_rec_async_command = ['/opt/boxen/homebrew/bin/ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
+" set default matcher in unite to fuzzy
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" open Unite ready for recursively, fuzzy match files
+nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
 
 " open is OS X only, the closest equiv in line, xdg-open, doesn't allow an
 " argument for speciying a particular app

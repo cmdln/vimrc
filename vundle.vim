@@ -43,6 +43,10 @@ Plugin 'sjl/gundo.vim'
 Plugin 'pangloss/vim-javascript'
 " find, complete, etc. on steroids
 Plugin 'Shougo/unite.vim'
+" proc supports the async file recursion mode in Unite
+Plugin 'Shougo/vimproc.vim'
+" auto detect tab and space handling rather than setting per project
+Plugin 'tpope/vim-sleuth'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -20,7 +20,7 @@ Plugin 'vim-misc'
 " continuously update ctags as buffers are saved
 Plugin 'easytags.vim'
 " look for .editorconfig and merge into vim settings
-Plugin 'editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 " Scala and SBT support
 Plugin 'derekwyatt/vim-scala'
 Plugin 'derekwyatt/vim-sbt'

@@ -17,6 +17,13 @@ filetype plugin indent on
 set nocompatible
 " turn on syntax support
 syntax on
+" set up a line number on the current line but relative above and below to help
+" with motion commands
+set number
+set relativenumber
+
+" make white space visible, where that matters
+set list
 
 " it is a big fat key, after all
 let mapleader = "\<Space>"

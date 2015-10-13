@@ -29,8 +29,9 @@ Plugin 'scrooloose/nerdtree'
 " syntax checking on steroids
 Plugin 'scrooloose/syntastic'
 " integrate ack, especially to be able to open matches, hugely useful for
-" re-factoring
-Plugin 'mileszs/ack.vim'
+" code aware search
+Plugin 'rking/ag.vim'
+" lightweight but sophisticated status line
 Plugin 'bling/vim-airline'
 " git integration
 Plugin 'tpope/vim-fugitive'

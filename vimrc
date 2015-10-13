@@ -9,7 +9,7 @@ set ts=4
 let oldwd = getcwd()
 exec "cd " . vimrc_git
 source vundle.vim
-source java.vim
+"source java.vim
 source javascript.vim
 source markdown.vim
 source text.vim

@@ -1,6 +1,10 @@
 " set the directory where my vimrc git project is located
 source ~/.vimrc_local
 
+" even with the nice space/tab autodetect, prefer 4 for tab stops
+" but let file type specifics override (for instance a setting of 2 for markdown
+set ts=4
+
 " source aux files also under git control
 let oldwd = getcwd()
 exec "cd " . vimrc_git

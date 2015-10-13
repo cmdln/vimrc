@@ -18,6 +18,9 @@ set nocompatible
 " turn on syntax support
 syntax on
 
+" it is a big fat key, after all
+let mapleader = "\<Space>"
+
 " change buffer behaviors to no longer require changes when hiding a buffer
 set hidden
 

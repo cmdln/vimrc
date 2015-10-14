@@ -11,6 +11,6 @@ endfunction
 "let makeprg = 'java -cp /opt/boxen/homebrew/opt/checkstyle/libexec/checkstyle-6.0-all.jar -c '. vimrc_git . '/checkstyle.xml %:p'
 let makeprg = 'checkstyle -c '. vimrc_git . '/checkstyle.xml ./%'
 
-autocmd FileType java let &makeprg=escape(makeprg, ' ')
-autocmd FileType java set errorformat=%f:%l:\ %m,%f:%l:%v:\ %m,%-G%.%#
+let &makeprg=escape(makeprg, ' ')
+setlocal errorformat=%f:%l:\ %m,%f:%l:%v:\ %m,%-G%.%#
 

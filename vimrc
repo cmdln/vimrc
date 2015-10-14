@@ -1,34 +1,17 @@
 " set the directory where my vimrc git project is located
 source ~/.vimrc_local
 
-" N.B. put settings that file type specific configs will override here
-"
-" even with the nice space/tab autodetect, prefer 4 for tab stops
-" but let file type specifics override (for instance a setting of 2 for markdown
-set ts=4
-" default to folding on syntax
-set fdm=syntax
-" set a readable width
-set textwidth=80
-" make white space visible, where that matters
-set list
-" set up folding preferences
-set fde=1
-" vim's spelling is smart enough for code, to only check comments
-set spell
-" add a hint for long lines
-set colorcolumn=120
-" default to expanding tabs, I'm not insane
-set expandtab
+" it is a big fat key, after all
+let mapleader = "\<Space>"
 
 " source aux files also under git control
 let oldwd = getcwd()
 exec "cd " . vimrc_git
 source vundle.vim
-"source java.vim
-source javascript.vim
-source markdown.vim
-source text.vim
+source airline.vim
+source syntastic.vim
+source unite.vim
+source mapping.vim
 exec "cd " . oldwd
 
 " turn on file type plugins
@@ -42,8 +25,25 @@ syntax on
 set number
 set relativenumber
 
-" it is a big fat key, after all
-let mapleader = "\<Space>"
+" even with the nice space/tab autodetect, prefer 4 for tab stops
+" but let file type specifics override (for instance a setting of 2 for markdown
+set tabstop=4
+" default to folding on syntax
+set foldmethod=syntax
+" set a readable width
+set textwidth=80
+" make white space visible, where that matters
+set list
+" except for help
+autocmd FileType help set nolist
+" set up folding preferences
+set fde=1
+" vim's spelling is smart enough for code, to only check comments
+set spell
+" add a hint for long lines
+set colorcolumn=120
+" default to expanding tabs, I'm not insane
+set expandtab
 
 " change buffer behaviors to no longer require changes when hiding a buffer
 set hidden
@@ -63,8 +63,8 @@ set incsearch
 set wildmode=longest:full
 set wildmenu
 " line break handling
-set lbr
-set sbr=+
+set linebreak
+set showbreak=+
 " always on status line
 set laststatus=2
 
@@ -86,56 +86,6 @@ set pastetoggle=<F2>
 " save when moving away
 au FocusLost * :wa
 
-" configure airline, advanced status line plugin
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-" these symbols rely on a patched powerline font being set either as gfn within
-" .gvimrc or as the font for the given terminal program
-let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-" configure syntastic, advanced syntax checker, with some reasonable behaviors
-"
-" always stick detected errors in the location list
-let g:syntastic_always_populate_loc_list = 1
-" open but only when errors are detected; default closes when errors are cleared
-" but doesn't open the list automatically
-let g:syntastic_auto_loc_list = 1
-" check when first opening a file
-let g:syntastic_check_on_open = 1
-" don't check on writing and quitting
-let g:syntastic_check_on_wq = 0
-" explicitly set the js checker to my preferred one
-let g:syntastic_javascript_checkers = ['eslint']
-
-" quickly clear Syntastic info
-nmap <F4> :SyntasticReset<CR>
-" toggle gundo's display
-nmap <F5> :GundoToggle<CR>
-" quickly toggle a right, vsplit for viewing, navigating whatever structure easy
-" tags/tagbar can figure out for the current buffer
-nmap <F9> :TagbarToggle<CR>
-" quickly toggle a left, vsplit for an insanely powerful file explorer
-nmap <F8> :NERDTreeToggle<CR>
-" open tree to current buffer
-nmap <S-F8> :NERDTreeFind<CR>
-
-" use the silver searcher with Unite's async file recursion
-let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
-" set default matcher in unite to fuzzy
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" open Unite ready for recursively, fuzzy match files
-nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
-
 " open is OS X only, the closest equiv in line, xdg-open, doesn't allow an
 " argument for speciying a particular app
 if has('gui_macvim')
@@ -152,6 +102,13 @@ if has('gui_macvim')
     endfunction
 
     command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
+endif
+
+if has("gui_running")
+    let narrows = ['text', 'markdown']
+    " from the help, recommended for widest possible
+    " for text, narrow width to make side to side scanning easier
+    autocmd BufEnter * if index(narrows, &ft) >= 0 | set columns=120 | else | set columns=9999 | endif
 endif
 
 " make sure to set TERM to xterm-256color in terminal program or app

@@ -2,6 +2,7 @@
 source ~/.vimrc_local
 
 " it is a big fat key, after all
+" N.B. should come before plugins and plugin specific settings
 let mapleader = "\<Space>"
 
 " source aux files also under git control

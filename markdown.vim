@@ -1,9 +1,17 @@
+" set a smaller indent
 autocmd filetype markdown set ts=2
-autocmd filetype markdown set sw=2
-autocmd filetype markdown set expandtab
-autocmd filetype markdown set nolinebreak
-autocmd filetype markdown set fdm=indent
-autocmd filetype markdown set tw=0
-autocmd filetype markdown set smarttab
-autocmd filetype markdown set smartindent
-autocmd FileType javascript set spell
+" like text files, don't break
+"autocmd filetype markdown set tw=0
+"" keep soft breaks between words
+"autocmd filetype markdown set nolinebreak
+"" fold on what indents there are
+"autocmd filetype markdown set fdm=indent
+"" smarten indent handling
+"autocmd filetype markdown set smartindent
+"" turn off line width hint
+"autocmd FileType markdown set colorcolumn=0
+"
+"if has("gui_running")
+"    " narrow the gui window for text wrangling
+"    autocmd FileType markdown set columns=120
+"endif

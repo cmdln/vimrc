@@ -1,9 +1,25 @@
 " set the directory where my vimrc git project is located
 source ~/.vimrc_local
 
+" N.B. put settings that file type specific configs will override here
+"
 " even with the nice space/tab autodetect, prefer 4 for tab stops
 " but let file type specifics override (for instance a setting of 2 for markdown
 set ts=4
+" default to folding on syntax
+set fdm=syntax
+" set a readable width
+set textwidth=80
+" make white space visible, where that matters
+set list
+" set up folding preferences
+set fde=1
+" vim's spelling is smart enough for code, to only check comments
+set spell
+" add a hint for long lines
+set colorcolumn=120
+" default to expanding tabs, I'm not insane
+set expandtab
 
 " source aux files also under git control
 let oldwd = getcwd()
@@ -25,9 +41,6 @@ syntax on
 " with motion commands
 set number
 set relativenumber
-
-" make white space visible, where that matters
-set list
 
 " it is a big fat key, after all
 let mapleader = "\<Space>"
@@ -55,20 +68,13 @@ set sbr=+
 " always on status line
 set laststatus=2
 
-" set up folding preferences
-set fde=1
-set fdm=syntax
 " let backspace work more naturally
 set backspace=start,indent,eol
-" set a readable width
-set textwidth=80
 " favor modern encoding
 set enc=utf-8
 " more readable config for list mode
 set listchars+=nbsp:¬,tab:»·,trail:·
 set listchars-=eol:$
-" add a hint for long lines
-set colorcolumn=120
 " smarter handling of case during search
 set ignorecase
 set smartcase
@@ -133,19 +139,19 @@ nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
 " open is OS X only, the closest equiv in line, xdg-open, doesn't allow an
 " argument for speciying a particular app
 if has('gui_macvim')
-	""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-	" Open current file with app given
-	""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-	function! s:OpenWith(appname)
-		noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
-		if v:shell_error
-			echohl Error
-			echon "Problem opening the file."
-			echohl Normal
-		endif
-	endfunction
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Open current file with app given
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    function! s:OpenWith(appname)
+        noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
+        if v:shell_error
+            echohl Error
+            echon "Problem opening the file."
+            echohl Normal
+        endif
+    endfunction
 
-	command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
+    command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
 endif
 
 " make sure to set TERM to xterm-256color in terminal program or app

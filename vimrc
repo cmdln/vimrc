@@ -34,9 +34,9 @@ set foldmethod=syntax
 " set a readable width
 set textwidth=80
 " make white space visible, where that matters
-set list
+set list!
 " except for help
-autocmd FileType help set nolist
+autocmd FileType help setlocal nolist
 " set up folding preferences
 set fde=1
 " vim's spelling is smart enough for code, to only check comments

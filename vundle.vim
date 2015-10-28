@@ -54,6 +54,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 " support for the Rust programming language
 Plugin 'rust-lang/rust.vim'
+" support for Rust's build tool/dependency manager
+Plugin 'timonv/vim-cargo'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

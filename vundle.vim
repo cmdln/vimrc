@@ -48,6 +48,12 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 " auto detect tab and space handling rather than setting per project
 Plugin 'tpope/vim-sleuth'
+" auto completion engine for vim
+Plugin 'Valloric/YouCompleteMe'
+" support for understanding JS within vim, works with YCM
+Plugin 'marijnh/tern_for_vim'
+" support for the Rust programming language
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

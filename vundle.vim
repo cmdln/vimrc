@@ -56,6 +56,8 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'rust-lang/rust.vim'
 " support for Rust's build tool/dependency manager
 Plugin 'timonv/vim-cargo'
+" support for multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

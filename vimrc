@@ -105,7 +105,7 @@ if has('gui_macvim')
     command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
 endif
 
-if has("gui_running")
+if has("gui_macvim")
     let narrows = ['text', 'markdown']
     " from the help, recommended for widest possible
     " for text, narrow width to make side to side scanning easier

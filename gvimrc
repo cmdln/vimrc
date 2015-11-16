@@ -5,8 +5,11 @@ source ~/.gvimrc_local
 " Mac: set guifont=Monaco:h14
 " from the help, recommended for tallest possible
 set lines=9999
+set columns=9999
 set background=dark
 "" enable antialiasing for environments supporting it
 set anti
 set guioptions-=r
 set guioptions-=b
+set guioptions-=T
+set guioptions-=m

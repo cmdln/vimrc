@@ -58,6 +58,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'timonv/vim-cargo'
 " support for multiple cursors
 Plugin 'terryma/vim-multiple-cursors'
+" support for quickly changing font size
+Plugin 'drmikehenry/vim-fontsize'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -60,6 +60,8 @@ Plugin 'timonv/vim-cargo'
 Plugin 'terryma/vim-multiple-cursors'
 " support for quickly changing font size
 Plugin 'drmikehenry/vim-fontsize'
+" support for jsonnet
+Plugin 'google/vim-jsonnet'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

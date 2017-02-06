@@ -12,7 +12,7 @@ setlocal colorcolumn=0
 " narrow width for gui since text will softwrap based on width
 if has("gui_running")
     " narrow the gui window for text wrangling
-    setlocal columns=120
+"    setlocal columns=120
 endif
 
 " open full screen with macvim

@@ -113,4 +113,4 @@ if has("gui_macvim")
 endif
 
 " make sure to set TERM to xterm-256color in terminal program or app
-colorscheme desert
+colorscheme slate

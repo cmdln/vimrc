@@ -114,4 +114,5 @@ endif
 
 " make sure to set TERM to xterm-256color in terminal program or app
 colorscheme slate
+" set this here for terminal sessions, also set in gvimrc for graphical sessions
 hi CursorLine guibg=Grey10

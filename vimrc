@@ -13,6 +13,7 @@ source airline.vim
 source syntastic.vim
 source unite.vim
 source mapping.vim
+source jsonnet.vim
 exec "cd " . oldwd
 
 " turn on file type plugins

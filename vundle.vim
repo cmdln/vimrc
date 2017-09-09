@@ -53,6 +53,8 @@ Plugin 'timonv/vim-cargo'
 Plugin 'drmikehenry/vim-fontsize'
 " support for jsonnet
 Plugin 'google/vim-jsonnet'
+" support for racer
+Plugin 'racer-rust/vim-racer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -9,7 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-" map a hotkey to opena  split buffer showing the ctags driven structure of some
+" map a hotkey to open a split buffer showing the ctags driven structure of some
 " source
 Plugin 'Tagbar'
 " dependency for easytags

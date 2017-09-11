@@ -118,3 +118,9 @@ endif
 colorscheme slate
 " set this here for terminal sessions, also set in gvimrc for graphical sessions
 hi CursorLine guibg=Grey10
+
+" fix for gundo with newer versions of python
+if has('python3')
+    let g:gundo_prefer_python3 = 1          " anything else breaks on Ubuntu 16.04+
+endif
+

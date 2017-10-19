@@ -8,10 +8,10 @@ let mapleader = "\<Space>"
 " source aux files also under git control
 let oldwd = getcwd()
 exec "cd " . vimrc_git
-source vundle.vim
+source plug.vim
 source airline.vim
 source syntastic.vim
-" source unite.vim
+source fzf.vim
 source mapping.vim
 source jsonnet.vim
 source racer.vim

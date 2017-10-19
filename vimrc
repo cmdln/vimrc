@@ -11,7 +11,7 @@ exec "cd " . vimrc_git
 source vundle.vim
 source airline.vim
 source syntastic.vim
-source unite.vim
+" source unite.vim
 source mapping.vim
 source jsonnet.vim
 source racer.vim

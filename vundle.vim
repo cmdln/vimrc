@@ -35,10 +35,9 @@ Plugin 'sjl/gundo.vim'
 " better support for JS
 Plugin 'pangloss/vim-javascript'
 " find, complete, etc. on steroids
-Plugin 'Shougo/unite.vim'
-" proc supports the async file recursion mode in Unite
-" N.B. on a fresh set up, cd ~/.vim/bundle/vimproc and run make
-Plugin 'Shougo/vimproc.vim'
+" fast fuzzy finder
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 " auto detect tab and space handling rather than setting per project
 Plugin 'tpope/vim-sleuth'
 " auto completion engine for vim

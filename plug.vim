@@ -40,6 +40,9 @@ Plug 'racer-rust/vim-racer'
 "Plug 'marijnh/tern_for_vim'
 " completion engine, needed to expose racer and tern
 Plug 'valloric/youcompleteme'
+" groovy syntax and indent
+Plug 'vim-scripts/groovyindent'
+Plug 'vim-scripts/groovy.vim'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

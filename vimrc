@@ -15,6 +15,7 @@ source fzf.vim
 source mapping.vim
 source jsonnet.vim
 source racer.vim
+source lsp.vim
 exec "cd " . oldwd
 
 " turn on file type plugins

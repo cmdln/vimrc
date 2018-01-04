@@ -43,6 +43,8 @@ Plug 'valloric/youcompleteme'
 " groovy syntax and indent
 Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'
+" LSP
+Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-musl'}
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

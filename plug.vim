@@ -45,6 +45,9 @@ Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'
 " LSP
 Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-musl'}
+" auto format all the things
+" https://github.com/Chiel92/vim-autoformat
+Plug 'Chiel92/vim-autoformat'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

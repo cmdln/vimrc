@@ -1,7 +1,7 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'rust': ['rls'],
     \ }
 
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>

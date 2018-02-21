@@ -6,9 +6,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 " syntax checking on steroids
 Plug 'scrooloose/syntastic'
-" integrate ag, especially to be able to open matches, hugely useful for
+" integrate ripgrep, especially to be able to open matches, hugely useful for
 " code aware search
-Plug 'rking/ag.vim'
+Plug 'jremmen/vim-ripgrep'
 " lightweight but sophisticated status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

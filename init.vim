@@ -1,5 +1,5 @@
 " set the directory where my vimrc git project is located
-source ~/.vimrc_local
+source ~/.config/nvim/local.vim
 
 " it is a big fat key, after all
 " N.B. should come before plugins and plugin specific settings
@@ -19,12 +19,6 @@ source lsp.vim
 source autoformat.vim
 exec "cd " . oldwd
 
-" turn on file type plugins
-filetype plugin indent on
-" turn off compatibility mode
-set nocompatible
-" turn on syntax support
-syntax on
 " set up a line number on the current line but relative above and below to help
 " with motion commands
 set number
@@ -91,38 +85,5 @@ set pastetoggle=<F2>
 " save when moving away
 au FocusLost * :wa
 
-" open is OS X only, the closest equiv in line, xdg-open, doesn't allow an
-" argument for speciying a particular app
-if has('gui_macvim')
-    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Open current file with app given
-    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    function! s:OpenWith(appname)
-        noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
-        if v:shell_error
-            echohl Error
-            echon "Problem opening the file."
-            echohl Normal
-        endif
-    endfunction
-
-    command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
-endif
-
-if has("gui_macvim")
-    let narrows = ['text', 'markdown']
-    " from the help, recommended for widest possible
-    " for text, narrow width to make side to side scanning easier
-    autocmd BufEnter * if index(narrows, &ft) >= 0 | set columns=120 | else | set columns=9999 | endif
-endif
-
 " make sure to set TERM to xterm-256color in terminal program or app
-colorscheme slate
-" set this here for terminal sessions, also set in gvimrc for graphical sessions
-hi CursorLine guibg=Grey10
-
-" fix for gundo with newer versions of python
-if has('python3')
-    let g:gundo_prefer_python3 = 1          " anything else breaks on Ubuntu 16.04+
-endif
-
+colorscheme desert

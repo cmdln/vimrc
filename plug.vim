@@ -1,4 +1,4 @@
-call plug#begin("~/.vim/plugged")
+call plug#begin("~/.config/nvim/plugged")
 
 " look for .editorconfig and merge into vim settings
 Plug 'editorconfig/editorconfig-vim'
@@ -36,10 +36,8 @@ Plug 'drmikehenry/vim-fontsize'
 Plug 'google/vim-jsonnet'
 " support for racer
 Plug 'racer-rust/vim-racer'
-" completions for JS
-"Plug 'marijnh/tern_for_vim'
-" completion engine, needed to expose racer and tern
-Plug 'valloric/youcompleteme'
+" completion using racer
+Plug 'roxma/nvim-cm-racer'
 " groovy syntax and indent
 Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'
@@ -48,6 +46,8 @@ Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-mu
 " auto format all the things
 " https://github.com/Chiel92/vim-autoformat
 Plug 'Chiel92/vim-autoformat'
+" auto-completion framework
+Plug 'roxma/nvim-completion-manager'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

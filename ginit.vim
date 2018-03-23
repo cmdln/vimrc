@@ -1,5 +1,5 @@
 " to allow specific fonts for specific OSes
-source ~/.gvimrc_local
+source ~/.config/nvim/glocal.vim
 
 set lines=65
 set columns=120

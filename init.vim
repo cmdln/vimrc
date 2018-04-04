@@ -86,8 +86,6 @@ set pastetoggle=<F2>
 au FocusLost * :wa
 
 " make sure to set TERM to xterm-256color in terminal program or app
-colorscheme slate
-
-" set this here for graphical sessions since setting bg dark seems to reset,
-" also set in vimrc for graphical sessions
-hi CursorLine guibg=Grey10
+set background=dark
+set termguicolors
+colorscheme breezy

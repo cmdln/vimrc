@@ -48,6 +48,10 @@ Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-mu
 Plug 'Chiel92/vim-autoformat'
 " auto-completion framework
 Plug 'roxma/nvim-completion-manager'
+" breeze dark color scheme, to match KDE
+" Plug cannot actually install this colorscheme, clone and link autoload and
+" colors manually
+"Plug 'fneu/breezy'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

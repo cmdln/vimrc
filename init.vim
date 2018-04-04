@@ -86,6 +86,6 @@ set pastetoggle=<F2>
 au FocusLost * :wa
 
 " make sure to set TERM to xterm-256color in terminal program or app
-set background=dark
+set background=light
 set termguicolors
 colorscheme breezy

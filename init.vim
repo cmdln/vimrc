@@ -89,3 +89,7 @@ au FocusLost * :wa
 set background=light
 set termguicolors
 colorscheme breezy
+
+" ensure autoread works, to detect file changes outside the editor
+set autoread
+au CursorHold * checktime

@@ -42,7 +42,7 @@ Plug 'roxma/nvim-cm-racer'
 Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'
 " LSP
-Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-musl'}
+Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 " auto format all the things
 " https://github.com/Chiel92/vim-autoformat
 Plug 'Chiel92/vim-autoformat'

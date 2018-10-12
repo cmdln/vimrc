@@ -30,8 +30,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'rust-lang/rust.vim'
 " support for Rust's build tool/dependency manager
 Plug 'timonv/vim-cargo'
-" support for quickly changing font size
-Plug 'drmikehenry/vim-fontsize'
 " support for jsonnet
 Plug 'google/vim-jsonnet'
 " support for racer

@@ -9,3 +9,5 @@ nmap <F9> :TagbarToggle<CR>
 nmap <F8> :NERDTreeToggle<CR>
 " open tree to current buffer
 nmap <S-F8> :NERDTreeFind<CR>
+" use same key, esc, to exit terminal mode
+tnoremap <Esc> <C-\><C-n>

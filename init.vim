@@ -86,9 +86,9 @@ set pastetoggle=<F2>
 au FocusLost * :wa
 
 " make sure to set TERM to xterm-256color in terminal program or app
+colorscheme breezy
 set background=light
 set termguicolors
-colorscheme breezy
 
 " ensure autoread works, to detect file changes outside the editor
 set autoread

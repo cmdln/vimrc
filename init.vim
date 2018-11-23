@@ -93,3 +93,6 @@ colorscheme breezy
 " ensure autoread works, to detect file changes outside the editor
 set autoread
 au CursorHold * checktime
+
+" keep nvim from resetting font back to default from terminal config
+set guicursor=

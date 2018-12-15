@@ -50,7 +50,7 @@ Plug 'roxma/nvim-completion-manager'
 " Plug cannot actually install this colorscheme, clone and link autoload and
 " colors manually
 "Plug 'fneu/breezy'
-" run npm i -g typescript tslint so that these plugins have the tools they need
+" run npm i -g typescript tslint typescript-formatter so that these plugins have the tools they need
 " typescript syntax support and other settings
 Plug 'leafgarland/typescript-vim'
 " plug into tsserver

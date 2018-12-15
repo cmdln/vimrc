@@ -55,6 +55,10 @@ Plug 'roxma/nvim-completion-manager'
 Plug 'leafgarland/typescript-vim'
 " plug into tsserver
 Plug 'Quramy/tsuquyomi'
+" Smart indenting for JS and TS
+Plug 'jason0x43/vim-js-indent'
+" Installs and builds vimproc (required to launch tsserver)
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

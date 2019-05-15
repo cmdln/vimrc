@@ -45,7 +45,7 @@ Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh
 " https://github.com/Chiel92/vim-autoformat
 Plug 'Chiel92/vim-autoformat'
 " auto-completion framework
-Plug 'roxma/nvim-completion-manager'
+Plug 'ncm2/ncm2'
 " breeze dark color scheme, to match KDE
 " Plug cannot actually install this colorscheme, clone and link autoload and
 " colors manually

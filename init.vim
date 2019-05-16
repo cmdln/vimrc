@@ -9,6 +9,7 @@ let mapleader = "\<Space>"
 let oldwd = getcwd()
 exec "cd " . vimrc_git
 source plug.vim
+source ncm2.vim
 source airline.vim
 source syntastic.vim
 source fzf.vim

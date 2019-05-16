@@ -40,25 +40,14 @@ Plug 'ncm2/ncm2-racer'
 Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'
 " LSP
-Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'roxma/nvim-yarp'
 " auto format all the things
 " https://github.com/Chiel92/vim-autoformat
 Plug 'Chiel92/vim-autoformat'
 " auto-completion framework
 Plug 'ncm2/ncm2'
-" breeze dark color scheme, to match KDE
-" Plug cannot actually install this colorscheme, clone and link autoload and
-" colors manually
-"Plug 'fneu/breezy'
-" run npm i -g typescript tslint typescript-formatter so that these plugins have the tools they need
-" typescript syntax support and other settings
-Plug 'leafgarland/typescript-vim'
-" plug into tsserver
-Plug 'Quramy/tsuquyomi'
-" Smart indenting for JS and TS
-Plug 'jason0x43/vim-js-indent'
-" Installs and builds vimproc (required to launch tsserver)
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

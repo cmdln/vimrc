@@ -35,7 +35,7 @@ Plug 'google/vim-jsonnet'
 " support for racer
 Plug 'racer-rust/vim-racer'
 " completion using racer
-Plug 'roxma/nvim-cm-racer'
+Plug 'ncm2/ncm2-racer'
 " groovy syntax and indent
 Plug 'vim-scripts/groovy.vim'
 Plug 'vim-scripts/groovyindent-unix'

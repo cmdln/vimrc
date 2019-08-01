@@ -48,6 +48,8 @@ Plug 'roxma/nvim-yarp'
 Plug 'Chiel92/vim-autoformat'
 " auto-completion framework
 Plug 'ncm2/ncm2'
+" taskwarrior
+Plug 'blindFS/vim-taskwarrior'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

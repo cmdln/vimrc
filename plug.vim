@@ -50,6 +50,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'ncm2/ncm2'
 " taskwarrior
 Plug 'blindFS/vim-taskwarrior'
+" support for lsp in gnvim
+Plug 'vhakulinen/gnvim-lsp'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

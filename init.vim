@@ -97,3 +97,20 @@ au CursorHold * checktime
 
 " keep nvim from resetting font back to default from terminal config
 set guicursor=
+
+set guioptions-=r
+set guioptions-=b
+set guioptions-=T
+set guioptions-=m
+
+" from https://stackoverflow.com/a/51424640
+let s:fontsize = 10
+function! AdjustFontSize(amount)
+  let s:fontsize = s:fontsize+a:amount
+  :execute "set gfn=DejaVu\\ Sans\\ Mono\\ for\\ Powerline,\\ Regular:h" . s:fontsize
+endfunction
+
+noremap <C-Up> :call AdjustFontSize(1)<CR>
+noremap <C-Down> :call AdjustFontSize(-1)<CR>
+inoremap <C-Up> <Esc>:call AdjustFontSize(1)<CR>a
+inoremap <C-Down> <Esc>:call AdjustFontSize(-1)<CR>a

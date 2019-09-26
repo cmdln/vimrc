@@ -103,6 +103,7 @@ set guioptions-=b
 set guioptions-=T
 set guioptions-=m
 
+set gfn=DejaVu\ Sans\ Mono\ for\ Powerline,\ Regular:h11
 " from https://stackoverflow.com/a/51424640
 let s:fontsize = 10
 function! AdjustFontSize(amount)

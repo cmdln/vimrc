@@ -103,12 +103,12 @@ set guioptions-=b
 set guioptions-=T
 set guioptions-=m
 
-set gfn=DejaVu\ Sans\ Mono\ for\ Powerline,\ Regular:h11
+set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h11
 " from https://stackoverflow.com/a/51424640
 let s:fontsize = 10
 function! AdjustFontSize(amount)
   let s:fontsize = s:fontsize+a:amount
-  :execute "set gfn=DejaVu\\ Sans\\ Mono\\ for\\ Powerline,\\ Regular:h" . s:fontsize
+  :execute "set gfn=DejaVu\\ Sans\\ Mono\\ for\\ Powerline:h" . s:fontsize
 endfunction
 
 noremap <C-Up> :call AdjustFontSize(1)<CR>

@@ -49,7 +49,7 @@ Plug 'Chiel92/vim-autoformat'
 " auto-completion framework
 Plug 'ncm2/ncm2'
 " taskwarrior
-Plug 'blindFS/vim-taskwarrior'
+Plug 'xarthurx/taskwarrior.vim'
 " support for lsp in gnvim
 Plug 'vhakulinen/gnvim-lsp'
 

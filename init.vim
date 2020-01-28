@@ -116,4 +116,10 @@ noremap <C-Down> :call AdjustFontSize(-1)<CR>
 inoremap <C-Up> <Esc>:call AdjustFontSize(1)<CR>a
 inoremap <C-Down> <Esc>:call AdjustFontSize(-1)<CR>a
 
+" widen the default display of the taskwarrior plugin to make the description
+" wrap less
 let g:task_rc_override = 'rc.defaultwidth=120'
+
+" override the default location of vimwiki and change to markdown
+let g:vimwiki_list = [{'path': '~/Documents/Wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_dir_link = 'index'

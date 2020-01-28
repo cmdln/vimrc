@@ -52,6 +52,8 @@ Plug 'ncm2/ncm2'
 Plug 'xarthurx/taskwarrior.vim'
 " support for lsp in gnvim
 Plug 'vhakulinen/gnvim-lsp'
+" Wiki support
+Plug 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required

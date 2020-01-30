@@ -121,5 +121,5 @@ inoremap <C-Down> <Esc>:call AdjustFontSize(-1)<CR>a
 let g:task_rc_override = 'rc.defaultwidth=120'
 
 " override the default location of vimwiki and change to markdown
-let g:vimwiki_list = [{'path': '~/Documents/Wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/Wiki/Work', 'syntax': 'markdown', 'ext': '.md'}, {'path': '~/Documents/Wiki/Brewery', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'index'

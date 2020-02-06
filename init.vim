@@ -95,6 +95,9 @@ set termguicolors
 set autoread
 au CursorHold * checktime
 
+" for gui, make it easier to tell different instances apart
+set title
+
 " keep nvim from resetting font back to default from terminal config
 set guicursor=
 

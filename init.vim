@@ -95,6 +95,8 @@ set termguicolors
 set autoread
 au CursorHold * checktime
 
+set title
+
 " keep nvim from resetting font back to default from terminal config
 set guicursor=
 
@@ -103,9 +105,9 @@ set guioptions-=b
 set guioptions-=T
 set guioptions-=m
 
-set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h11
+set gfn=DejaVu\ Sans\ Mono\ for\ Powerline:h13
 " from https://stackoverflow.com/a/51424640
-let s:fontsize = 10
+let s:fontsize = 13
 function! AdjustFontSize(amount)
   let s:fontsize = s:fontsize+a:amount
   :execute "set gfn=DejaVu\\ Sans\\ Mono\\ for\\ Powerline:h" . s:fontsize

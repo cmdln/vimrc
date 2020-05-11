@@ -18,6 +18,7 @@ source jsonnet.vim
 source racer.vim
 source lsp.vim
 source autoformat.vim
+source nerdtree.vim
 exec "cd " . oldwd
 
 " set up a line number on the current line but relative above and below to help

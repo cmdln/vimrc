@@ -4,6 +4,8 @@ call plug#begin("~/.config/nvim/plugged")
 Plug 'editorconfig/editorconfig-vim'
 " file and dir browser
 Plug 'scrooloose/nerdtree'
+" git support for nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " syntax checking on steroids
 Plug 'scrooloose/syntastic'
 " integrate ripgrep, especially to be able to open matches, hugely useful for

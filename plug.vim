@@ -3,7 +3,7 @@ call plug#begin("~/.config/nvim/plugged")
 " look for .editorconfig and merge into vim settings
 Plug 'editorconfig/editorconfig-vim'
 " file and dir browser
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " git support for nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " syntax checking on steroids

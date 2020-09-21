@@ -17,7 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 " git integration
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 " visualize vim's undo tree
 Plug 'sjl/gundo.vim'
 " better support for JS
